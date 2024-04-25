@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "packagesRules": [
+  "packageRules": [
     {
       "groupName": "react",
       "matchPackageNames": [
