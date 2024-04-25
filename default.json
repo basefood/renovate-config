@@ -15,9 +15,6 @@
     "github>basefood/renovate-config//presets/groupMui",
     "github>basefood/renovate-config//presets/groupGithubActions"
   ],
-  "node": {
-    "enabled": false
-  },
   "rebaseWhen": "conflicted",
   "labels": ["dependencies"],
   "rangeStrategy": "bump",
@@ -27,5 +24,11 @@
     "automerge": false,
     "addLabels": ["major"]
   },
-  "ignoreDeps": ["node", "graphql"]
+  "ignoreDeps": ["node", "graphql"],
+  "packageRules": [
+    {
+      "matchCategories": ["node"],
+      "enabled": false
+    }
+  ]
 }
