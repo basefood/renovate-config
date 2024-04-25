@@ -2,10 +2,9 @@ name: validate renovate config
 
 on:
   push:
+    branches:
+      - main
   pull_request:
-
-env:
-  LOG_LEVEL: debug
 
 jobs:
   validate-renovate-config:
@@ -19,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate renovate config
         run: |
-          for file in *.json presets/*.json; do
+          for file in *.json* presets/*.json*; do
             echo "[CI] validate $file"
-            RENOVATE_CONFIG_FILE=${file} npx renovate renovate-config-validator
+            npx renovate renovate-config-validator ${file}
           done
