@@ -1,0 +1,31 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "timezone": "Asia/Tokyo",
+  "schedule": [
+    "after 1am and before 6am on the 1st through 3rd day of the month"
+  ],
+  "extends": [
+    "config:recommend",
+    "group:allNonMajor",
+    ":semanticCommitTypeAll(chore)",
+    "github>basefood/renovate-config//presets/groupJSTest",
+    "github>basefood/renovate-config//presets/groupLinters",
+    "github>basefood/renovate-config//presets/groupNext",
+    "github>basefood/renovate-config//presets/groupReact",
+    "github>basefood/renovate-config//presets/groupMui",
+    "github>basefood/renovate-config//presets/groupGithubActions"
+  ],
+  "node": {
+    "enabled": false
+  },
+  "rebaseWhen": "conflicted",
+  "labels": ["dependencies"],
+  "rangeStrategy": "bump",
+  "platformCommit": true,
+  "platformAutomerge": true,
+  "major": {
+    "automerge": false,
+    "addLabels": ["major"]
+  },
+  "ignoreDeps": ["node", "graphql"]
+}
