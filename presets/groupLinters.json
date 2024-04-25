@@ -3,7 +3,7 @@
   "packageRules": [
     {
       "groupName": "linters",
-      "extends": "packages:linters",
+      "extends": ["packages:linters"],
       "matchPackageNames": ["^eslint-plugin-", "prettier"],
       "automerge": true
     }
