@@ -5,7 +5,7 @@
     "after 1am and before 6am on the 1st through 3rd day of the month"
   ],
   "extends": [
-    "config:recommend",
+    "config:recommended",
     "group:allNonMajor",
     ":semanticCommitTypeAll(chore)",
     "github>basefood/renovate-config//presets/groupJSTest",
