@@ -20,5 +20,5 @@ jobs:
         run: |
           for file in *.json* presets/*.json*; do
             echo "[CI] validate $file"
-            npx renovate renovate-config-validator ${file}
+            npx -p renovate renovate-config-validator ${file}
           done
