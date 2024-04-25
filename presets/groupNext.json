@@ -3,7 +3,7 @@
   "packageRules": [
     {
       "groupName": "Next.js monorepo",
-      "extends": "monorepo:nextjs",
+      "extends": ["monorepo:nextjs"],
       "matchUpdateTypes": ["patch", "minor"],
       "automerge": true
     }

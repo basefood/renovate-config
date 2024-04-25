@@ -3,7 +3,7 @@
   "packageRules": [
     {
       "groupName": "material-ui monorepo",
-      "extends": "monorepo:material-ui",
+      "extends": ["monorepo:material-ui"],
       "matchUpdateTypes": ["patch", "minor"],
       "automerge": true
     }
