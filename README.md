@@ -1,3 +1,5 @@
+[![validate renovate config](https://github.com/basefood/renovate-config/actions/workflows/ci.yaml/badge.svg)](https://github.com/basefood/renovate-config/actions/workflows/ci.yaml)
+
 # renovate-config
 
 This repository contains the basic Renovate configuration that is used in all other basefood's repositories.
