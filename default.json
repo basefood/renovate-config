@@ -8,6 +8,7 @@
     "config:recommended",
     "group:allNonMajor",
     ":semanticCommitTypeAll(chore)",
+    ":semanticCommitType(chore)",
     "github>basefood/renovate-config//presets/groupJSTest",
     "github>basefood/renovate-config//presets/groupLinters",
     "github>basefood/renovate-config//presets/groupNext",
